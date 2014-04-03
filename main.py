@@ -279,6 +279,18 @@ class Dirt2(Block):
 		self.image = pygame.image.load(os.path.join('Images', 'DesertGroundTexture.tif')).convert_alpha()
 					
 
+class Rain():
+# need to add positioning of rain, speed, and width of rain section
+	def __init__(self):
+		self.temp= 0
+		self.rgb = (255, 255, 255)
+
+	def setColor(self, color):
+		self.rgb = color
+
+	def getColor(self):
+		return self.rgb
+
 player = Player((150, 50))
 
 getRGB(1)
