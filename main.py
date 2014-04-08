@@ -279,8 +279,9 @@ class Dirt2(Block):
 		self.image = pygame.image.load(os.path.join('Images', 'DesertGroundTexture.tif')).convert_alpha()
 					
 
-class Rain():
+class Rain(Block):
 # need to add positioning of rain, speed, and width of rain section
+#positioning, and width can be covered with the inherited block class(needs the def __init___ but I'll leave that to you for now).  For speed you can make a gravity function, the one in the player class will be handy for reference.
 	def __init__(self):
 		self.temp= 0
 		self.rgb = (255, 255, 255)
